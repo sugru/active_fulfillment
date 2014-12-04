@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <OutboundOrderShipmentDetailsResponse xmlns="http://ws.barrettdistribution.com/wsi2test/">
+      <OutboundOrderShipmentDetails_SerialLOOP>
+        <OutboundOrderShipmentDetails_Serial>
+          <Orderid>2443090</Orderid>
+          <Shipid>1</Shipid>
+          <Reference>123456D</Reference>
+          <TrackingNumber>1Z4430900000013</TrackingNumber>
+          <dateshipped>2015-02-17</dateshipped>
+          <shipviacode>GRND</shipviacode>
+          <kgs>0</kgs>
+          <gms>0</gms>
+          <ozs>0</ozs>
+          <shipticket>60</shipticket>
+          <height>60</height>
+          <width>48</width>
+          <length>40</length>
+          <shiptoname>Johnny Chase</shiptoname>
+          <shiptocontact>Johnny Chase</shiptocontact>
+          <shiptoaddr1>100 Information Super Highway</shiptoaddr1>
+          <shiptoaddr2>Suite 66</shiptoaddr2>
+          <shiptocity>Beverly Hills</shiptocity>
+          <shiptostate>CA</shiptostate>
+          <shiptopostalcode>90210</shiptopostalcode>
+          <shiptocountrycode>US</shiptocountrycode>
+          <shiptophone>123-456-789</shiptophone>
+          <carrier>UPS</carrier>
+          <carrier_name>UPS</carrier_name>
+          <shiptype>S</shiptype>
+          <shipterms>PPD</shipterms>
+          <reportingcode>A</reportingcode>
+          <depositororder>123456D</depositororder>
+          <po>123456D</po>
+          <billoflading>2443090-1</billoflading>
+          <invoicedate>2015-02-17</invoicedate>
+          <effectivedate>2015-02-17</effectivedate>
+          <totalunits>3</totalunits>
+          <uomweight>LB</uomweight>
+          <totalvolume>0.024</totalvolume>
+          <uomvolume>CF</uomvolume>
+          <uom>CT</uom>
+          <warehouse_name>BARRETT DISTRIBUTION CENTER - FRANKLIN</warehouse_name>
+          <warehouse_id>FRA</warehouse_id>
+          <depositor_name>SUGRU</depositor_name>
+          <freightcost>20.2</freightcost>
+          <OutboundOrderShipmentDetailWithSerial>
+            <OutboundOrderShipmentDetail>
+              <shipticket>00000015374089S</shipticket>
+              <trackingno>1Z4430900000013</trackingno>
+              <servicecode>GRND</servicecode>
+              <lbs>0</lbs>
+              <kgs>0</kgs>
+              <gms>0</gms>
+              <ozs>0</ozs>
+              <item>CARCASSONNE</item>
+              <inventoryclass>ERROR</inventoryclass>
+              <statuscode>CC</statuscode>
+              <linenumber>000000</linenumber>
+              <orderdate>2015-02-17</orderdate>
+              <po>123456D</po>
+              <qtyordered>2</qtyordered>
+              <qtyshipped>2</qtyshipped>
+              <qtydiff>0</qtydiff>
+              <uom>EA</uom>
+              <weight>0</weight>
+              <weightquaifier>G</weightquaifier>
+              <weightunit>L</weightunit>
+              <description>API TEST ITEM</description>
+              <dtlpassthrunum01>2</dtlpassthrunum01>
+              <dtlpassthrunum10>16</dtlpassthrunum10>
+              <fromlpid>000000000000000</fromlpid>
+              <smallpackagelbs>0</smallpackagelbs>
+              <deliveryservice>GRND</deliveryservice>
+              <OutboundOrderShipmentSerialLOOP/>
+            </OutboundOrderShipmentDetail>
+            <OutboundOrderShipmentDetail>
+              <shipticket>00000015374089S</shipticket>
+              <trackingno>1Z4430900000013</trackingno>
+              <servicecode>GRND</servicecode>
+              <lbs>0</lbs>
+              <kgs>0</kgs>
+              <gms>0</gms>
+              <ozs>0</ozs>
+              <item>CITADELS</item>
+              <inventoryclass>ERROR</inventoryclass>
+              <statuscode>CC</statuscode>
+              <linenumber>000000</linenumber>
+              <orderdate>2015-02-17</orderdate>
+              <po>123456D</po>
+              <qtyordered>1</qtyordered>
+              <qtyshipped>1</qtyshipped>
+              <qtydiff>0</qtydiff>
+              <uom>EA</uom>
+              <weight>0</weight>
+              <weightquaifier>G</weightquaifier>
+              <weightunit>L</weightunit>
+              <description>API TEST ITEM</description>
+              <dtlpassthrunum01>1</dtlpassthrunum01>
+              <dtlpassthrunum10>17</dtlpassthrunum10>
+              <fromlpid>000000000000000</fromlpid>
+              <smallpackagelbs>0</smallpackagelbs>
+              <deliveryservice>GRND</deliveryservice>
+              <OutboundOrderShipmentSerialLOOP/>
+            </OutboundOrderShipmentDetail>
+          </OutboundOrderShipmentDetailWithSerial>
+        </OutboundOrderShipmentDetails_Serial>
+      </OutboundOrderShipmentDetails_SerialLOOP>
+    </OutboundOrderShipmentDetailsResponse>
+  </soap:Body>
+</soap:Envelope>
