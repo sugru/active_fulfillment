@@ -254,24 +254,31 @@ module ActiveFulfillment
 
     def parse_tracking_response(document)
       response = {}
+      node = REXML::XPath.first(document, "//OutboundOrderShipmentDetailsResponse/OutboundOrderShipmentDetails_SerialLOOP")
+
+      unless node
+        response[:response_status] = FAILURE
+        return response
+      end
+
       response[:tracking_numbers] = {}
       response[:tracking_companies] = {}
       response[:tracking_urls] = {}
 
-      track_node = REXML::XPath.first(document, '//TrackingNumber')
+      track_node = REXML::XPath.first(node, '//TrackingNumber')
       if track_node
-        id_node = REXML::XPath.first(document, '//Reference') # Or OrderID?
+        id_node = REXML::XPath.first(node, '//Reference') # Or OrderID?
         response[:tracking_numbers][id_node.text] = [track_node.text]
       end
 
-      company_node = REXML::XPath.first(document, '//carrier')
+      company_node = REXML::XPath.first(node, '//carrier')
       if company_node
-        id_node = REXML::XPath.first(document, '//Reference') # Or OrderID?
+        id_node = REXML::XPath.first(node, '//Reference') # Or OrderID?
         response[:tracking_companies][id_node.text] = [company_node.text]
       end
 
-      response[:date_shipped] = REXML::XPath.first(document, '//dateshipped').text
-      response[:freight_cost] = REXML::XPath.first(document, '//freightcost').text
+      response[:date_shipped] = REXML::XPath.first(node, '//dateshipped').text
+      response[:freight_cost] = REXML::XPath.first(node, '//freightcost').text
 
       response[:response_status] = SUCCESS
       response
