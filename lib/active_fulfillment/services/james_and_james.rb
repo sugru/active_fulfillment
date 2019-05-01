@@ -46,6 +46,7 @@ module ActiveFulfillment
       data[:order][:total_value] = options[:total_value] unless options[:total_value].blank?
       data[:order][:days_before_bbe] = options[:days_before_bbe] unless options[:days_before_bbe].blank?
       data[:order][:callback_url] = options[:callback_url] unless options[:callback_url].blank?
+      data[:order][:brand_id] = options[:brand_id] unless options[:brand_id].blank?
       return data
     end
 
